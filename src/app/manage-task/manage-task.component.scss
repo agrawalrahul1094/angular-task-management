@@ -1,0 +1,58 @@
+.manage-task-container {
+  padding: 15px;
+  .manage-task-header {
+    padding: 10px 0;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .filter-wrapper,
+    .toggle-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    .filter-wrapper {
+      .filter-item {
+        margin-right: 10px;
+      }
+    }
+    .toggle-wrapper {
+      .toggle-icon {
+        margin-left: 10px;
+      }
+    }
+  }
+  .manage-task-content {
+    display: flex;
+    padding: 10px 0;
+    .card-host-wrapper {
+      width: 25%;
+      margin-right: 10px;
+      background-color: whitesmoke;
+      border-radius: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.add-task-button {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: #005efa;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  color: white;
+  font-size: 24px;
+  right: 19px;
+  bottom: 24px;
+  z-index: 2;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}

@@ -1,0 +1,21 @@
+<div class="card-host-container">
+  <div class="card-host-header">
+    {{ config.statusTitle }}
+  </div>
+  <div
+    class="card-host-content"
+    cdkDropList
+    [id]="config.id"
+    [cdkDropListData]="config.tasks"
+    (cdkDropListDropped)="onTaskDrop($event)"
+  >
+    <div
+      class="card-wrapper"
+      *ngFor="let task of config.tasks; let i = index; trackBy: tracktask"
+      cdkDrag
+      [cdkDragData]="task"
+    >
+      <app-card [config]="task" (delete)="deleteTask(task, i)"></app-card>
+    </div>
+  </div>
+</div>

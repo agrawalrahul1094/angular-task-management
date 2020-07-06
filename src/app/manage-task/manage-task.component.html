@@ -1,0 +1,33 @@
+<div class="manage-task-container">
+  <div class="manage-task-header">
+    <div class="filter-wrapper">
+      <i class="icon-icomoon-star filter-item"></i>
+      <app-chip [config]="peopleChip" class="filter-item"></app-chip>
+      <app-chip [config]="timeChip" class="filter-item"></app-chip>
+    </div>
+    <div class="toggle-wrapper">
+      <span>Show my tasks only</span>
+      <i class="material-icons md-24 toggle-icon">toggle_off</i>
+    </div>
+  </div>
+  <div class="manage-task-content" cdkDropListGroup>
+    <div
+      class="card-host-wrapper"
+      *ngFor="let statusSection of config; trackBy: trackSection"
+    >
+      <app-card-host
+        [config]="statusSection"
+        (refreshBoard)="refreshTaskBoard($event)"
+      ></app-card-host>
+    </div>
+  </div>
+</div>
+
+<div class="add-task-button" (click)="openPopup($event)">
+  +
+</div>
+
+<ng-container #popupContainer></ng-container>
+<ng-template #popupTemplate>
+  <app-popup (closePopup)="closePopup()"></app-popup>
+</ng-template>

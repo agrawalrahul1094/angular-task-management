@@ -1,0 +1,42 @@
+.card-container {
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+  .card-action {
+    position: relative;
+    color: black;
+    text-align: center;
+    padding: 0 10px;
+    .drag-handle-placeholder {
+      cursor: move;
+    }
+    .delete-card.material-icons {
+      cursor: pointer;
+      position: absolute;
+      top: 3px;
+      right: 3px;
+      font-size: 18px;
+    }
+  }
+  .card-title {
+    border-left: 3px solid green;
+    padding: 0 10px 0 7px;
+    box-sizing: border-box;
+  }
+  .card-visual {
+    padding-top: 10px;
+    img {
+      height: 105px;
+      width: 100%;
+    }
+  }
+  .card-footer {
+    padding: 10px 10px 0;
+    .action-items {
+      display: flex;
+      .chip-wrapper {
+        padding-right: 5px;
+      }
+    }
+  }
+}

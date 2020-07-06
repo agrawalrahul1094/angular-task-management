@@ -1,0 +1,4 @@
+<div [@dialog]="true" class="popup-modal large center">
+  <app-create-task-from (callback)="close()"></app-create-task-from>
+</div>
+<div [@overlay]="true" class="lean-overlay" (click)="onOverlayClick()"></div>

@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?gl41os');
+  src:  url('icomoon.eot?gl41os#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?gl41os') format('truetype'),
+    url('icomoon.woff?gl41os') format('woff'),
+    url('icomoon.svg?gl41os#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-icomoon"], [class*=" icon-icomoon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icomoon-check:before {
+  content: "\e907";
+}
+.icon-icomoon-bell:before {
+  content: "\e900";
+}
+.icon-icomoon-tools-2:before {
+  content: "\e901";
+}
+.icon-icomoon-wrench:before {
+  content: "\e901";
+}
+.icon-icomoon-screwdriver:before {
+  content: "\e901";
+}
+.icon-icomoon-star:before {
+  content: "\e902";
+}
+.icon-icomoon-favorite:before {
+  content: "\e902";
+}
+.icon-icomoon-calendar:before {
+  content: "\e903";
+}
+.icon-icomoon-date:before {
+  content: "\e903";
+}
+.icon-icomoon-schedule:before {
+  content: "\e903";
+}
+.icon-icomoon-ellipsis-h:before {
+  content: "\e904";
+}
+.icon-icomoon-user-o:before {
+  content: "\e905";
+}
+.icon-icomoon-home2:before {
+  content: "\e906";
+}
+.icon-icomoon-stopwatch:before {
+  content: "\e952";
+}
+.icon-icomoon-bubble2:before {
+  content: "\e96e";
+}
+.icon-icomoon-search:before {
+  content: "\e986";
+}
+.icon-icomoon-cloud-upload:before {
+  content: "\e9c3";
+}
+.icon-icomoon-attachment:before {
+  content: "\e9cd";
+}

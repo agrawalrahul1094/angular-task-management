@@ -1,0 +1,26 @@
+<div class="card-container">
+  <div class="card-action">
+    <span class="drag-handle-placeholder material-icons md-18">
+      drag_handle
+    </span>
+    <span class="delete-card material-icons md-18" (click)="deleteCard()">
+      remove_circle
+    </span>
+  </div>
+  <div class="card-title">
+    {{ config?.title }}
+  </div>
+  <div class="card-visual" *ngIf="config?.img">
+    <img src="../../assets/images/{{ config.img }}" alt="card_image" />
+  </div>
+  <div class="card-footer" *ngIf="config?.chips?.length">
+    <div class="action-items">
+      <div class="chip-wrapper" *ngFor="let chip of config?.chips">
+        <app-chip [config]="chip"></app-chip>
+      </div>
+    </div>
+    <div class="user-profiles">
+      <span class="user-profile"> </span>
+    </div>
+  </div>
+</div>

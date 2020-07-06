@@ -1,0 +1,24 @@
+.modal-popup {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .modal-header {
+    display: flex;
+    .reset-btn {
+      margin: 0 10px;
+    }
+  }
+  .modal-body {
+    flex: 1;
+    overflow: auto;
+  }
+}
+
+.ng-valid[required],
+.ng-valid.required {
+  border-left: 5px solid #42a948;
+}
+
+.ng-invalid:not(form).ng-dirty {
+  border-left: 5px solid #a94442;
+}

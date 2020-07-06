@@ -1,0 +1,10 @@
+<div
+  class="chip-container"
+  [ngStyle]="{
+    'background-color': config?.backgroundColor,
+    color: config?.textColor
+  }"
+>
+  <span class="chip-icon {{config.icon}}"></span>
+  <span class="chip-text">{{ config?.text }}</span>
+</div>

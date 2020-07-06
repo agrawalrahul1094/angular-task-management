@@ -1,0 +1,31 @@
+$left_nav_width: 50px;
+$header_height: 60px;
+
+.main {
+  .main-container {
+    .left-nav-wrapper {
+      height: 100%;
+      width: $left_nav_width;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .content-wrapper {
+      padding-left: $left_nav_width;
+      .header-wrapper {
+        height: $header_height;
+        background: white;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19);
+        padding: 15px;
+        position: fixed;
+        top: 0;
+        width: calc(100% - #{$left_nav_width});
+        box-sizing: border-box;
+        z-index: 10;
+      }
+      .route-wrapper {
+        padding-top: $header_height;
+      }
+    }
+  }
+}
